@@ -2,9 +2,9 @@
 
 On the first week of this SwiftUI course we learned about the different stacks which can be used. 
 
-<p align="center">
+
 ![](images/app.png)
-</p>
+
 
 ## Things I learned 
 
