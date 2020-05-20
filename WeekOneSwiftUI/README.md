@@ -2,10 +2,8 @@
 
 On the first week of this SwiftUI course we learned about the different stacks which can be used. 
 
-![](images/app.png)
-
 <p align="center">
-  <img src=(images/app.png)>
+![](images/app.png)
 </p>
 
 ## Things I learned 
