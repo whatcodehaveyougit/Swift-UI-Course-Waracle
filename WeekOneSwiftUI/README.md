@@ -5,7 +5,7 @@ On the first week of this SwiftUI course we learned about the different stacks w
 ![](images/app.png)
 
 <p align="center">
-  <img width="460" height="300" src="(images/app.png)">
+  <img src=(images/app.png)>
 </p>
 
 ## Things I learned 
