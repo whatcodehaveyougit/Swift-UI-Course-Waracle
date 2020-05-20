@@ -2,7 +2,7 @@
 
 On the first week of this SwiftUI course we learned about the different stacks which can be used. 
 
-![](images/app)
+![](images/app.png)
 
 
 ## Things I learned 
