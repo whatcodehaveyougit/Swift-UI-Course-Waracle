@@ -9,16 +9,13 @@
 import SwiftUI
 
 struct MovieView: View {
-    
-    var title: String
-    
     var body: some View {
-        Text(title)
+        Text("Hello, World!")
     }
 }
 
 struct MovieView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieView(title: "Test")
+        MovieView()
     }
 }
