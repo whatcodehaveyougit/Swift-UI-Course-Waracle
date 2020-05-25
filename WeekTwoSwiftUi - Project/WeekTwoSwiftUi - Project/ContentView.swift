@@ -35,10 +35,15 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .padding(.bottom, 10.0)
 
-                    ForEach(0..<movies.count) { number in
-                        Text(self.movies[number])
-                            .padding(.vertical, 10.0)
-                    }
+                    List {
+                        ForEach(0..<movies.count) { number in
+                            NavigationLink(destination:
+                                MovieView(title: "test")){
+                                   Text("test")
+                                }
+                   }
+                }
+                   
                     
                     
                 }
