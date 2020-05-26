@@ -36,7 +36,7 @@ var body: some View {
                        ForEach(0..<movies.count) { number in
                         VStack {
                             NavigationLink(destination:
-                                MovieView()){
+                            MovieView(title: self.movies[number])){
                                    Text(self.movies[number])
                                 }
                                  .foregroundColor(Color.black)

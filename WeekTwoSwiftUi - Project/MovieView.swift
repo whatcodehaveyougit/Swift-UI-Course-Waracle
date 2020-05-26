@@ -9,13 +9,21 @@
 import SwiftUI
 
 struct MovieView: View {
+    
+    // These are required for a movie view
+    var title: String
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        VStack {
+            Text(title)
+        }
     }
 }
 
 struct MovieView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieView()
+        // Can show anything we want here, even another page!
+        MovieView(title: "test")
     }
 }
