@@ -64,14 +64,14 @@ https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overvie
 
 ### Thoughts and questions
 
-Having to string interpolate ints was a bit strange I thought.
+- Having to string interpolate ints was a bit strange I thought.
 
-Can buttons be used to go to navigation views?  Does not seem like it.
+- Can buttons be used to go to navigation views?  Does not seem like it.
 
-Tried to do an image overlay for the home page but it did not work.  Found that tricky to work out. 
+- Tried to do an image overlay for the home page but it did not work.  Found that tricky to work out.
 
-Error messages can be unhelpful!
+- Error messages can be unhelpful!
 
-The modifiers assistance is very helpful.
+- The modifiers assistance is very helpful.
 
-Sorting out spacing seems to get it working sometimes...
+- Sorting out spacing seems to get it working sometimes...

@@ -9,8 +9,28 @@
 import SwiftUI
 
 struct MovieInfoView: View {
+    
+    @State var isLiked: Bool = false
+    @State var comment: String = ""
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack(alignment: .center) {
+            
+            Text("Film Review")
+                .font(.title)
+            Text("What did you think of this Film?")
+            TextField("Comments on film", text: $comment)
+            
+            Toggle(isOn: $isLiked){
+                Text("Did you like this film?")
+            }
+        }
+        .background(isLiked ? Color.blue : Color.white)
+
+        
+        
     }
 }
 
