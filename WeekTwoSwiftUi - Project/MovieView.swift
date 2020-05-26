@@ -7,48 +7,53 @@ struct MovieView: View {
     var movie: Movie
     
     var body: some View {
-        
-        VStack {
-            
-            VStack {
-                Text(movie.title)
-//                Int(movie.releaseYear)
-                   }
-                   .padding(.all)
-                   .foregroundColor(Color.white)
-                   .background(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                   .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-                    Spacer()
-            VStack {
-                Text("Realease year:")
+        NavigationView{
+          VStack {
                 
-                Spacer()
-                Text("Movie Description:")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                
-                Text(movie.description)
-                    .multilineTextAlignment(.center)
-                    Spacer()
-                    .font(.body)
                 VStack {
-                    Button(action: {
-                        print("This will display more info")
-                    }) {
-                        Text("More Info")
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                            .padding()
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color.black, lineWidth: 5)
-                            )
+                    Text(movie.title)
+    //                Int(movie.releaseYear)
+                       }
+                       .padding(.all)
+                       .foregroundColor(Color.white)
+                       .background(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+                       .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                        Spacer()
+                VStack {
+                    Text("Realease year:")
+                    
+                    Spacer()
+                    Text("Movie Description:")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    
+                    Text(movie.description)
+                        .multilineTextAlignment(.center)
+                        Spacer()
+                        .font(.body)
+                    NavigationLink(destination: MovieInfoView()){
+                        VStack {
+                               Button(action: {
+                                   print("This will display more info")
+                               }) {
+                                   Text("More Info")
+                                       .fontWeight(.bold)
+                                       .foregroundColor(.black)
+                                       .padding()
+                                       .overlay(
+                                           RoundedRectangle(cornerRadius: 20)
+                                               .stroke(Color.black, lineWidth: 5)
+                                       )
+                               }
+                                
+                           }.padding(.bottom, 20.0)
                     }
-                     
-                }.padding(.bottom, 20.0)
-               
-            }
-           
+                   
+                   
+                }
+                       
+             }
         }
+  
      
     }
  
