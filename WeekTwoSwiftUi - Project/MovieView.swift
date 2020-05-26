@@ -16,9 +16,18 @@ struct MovieView: View {
     var body: some View {
         
         VStack {
-            Text(title)
+            VStack {
+                    Text(title)
+                   }
+                   .padding(.all)
+                   .foregroundColor(Color.white)
+                   .background(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+                   .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                    Spacer()
         }
+     
     }
+ 
 }
 
 struct MovieView_Previews: PreviewProvider {
