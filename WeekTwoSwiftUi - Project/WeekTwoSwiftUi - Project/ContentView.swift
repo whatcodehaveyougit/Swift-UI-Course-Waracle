@@ -10,7 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     
-var movies = ["film 1", "film 2"]
+    var movies = [Movie(title: "Batman Begins",
+                        releaseYear: 2005,
+                        description: "First Movie in the Dark Night Trilogy, directed by Christopher Nolan. The one where it begins in the alley, he joins the league of shadows and it all escalates from there with him eventually becoming Batman."),
+                  
+                  Movie(title: "The Dark Night",
+                        releaseYear: 2008,
+                        description:  "Second Movie in the Dark Night Trilogy, directed by Christopher Nolan.  The one with the 2 ferries and Batman then goes into hiding."),
+                  
+                  Movie(title: "The Dark Night Rises",
+                        releaseYear: 2012,
+                        description: "Third Movie in the Dark Night Trilogy, directed by Christopher Nolan. The one with the bomb that nearly goes off")]
 
 var body: some View {
     NavigationView{
@@ -33,11 +43,11 @@ var body: some View {
                        .font(.largeTitle)
                        .padding(.bottom, 10.0)
 
-                       ForEach(0..<movies.count) { number in
+                       ForEach(movies) { movie in
                         VStack {
                             NavigationLink(destination:
-                            MovieView(title: self.movies[number])){
-                                   Text(self.movies[number])
+                            MovieView(movie: movie)){
+                                Text(movie.title)
                                 }
                                  .foregroundColor(Color.black)
                                  .padding()
